@@ -52,9 +52,13 @@ o	Regularization techniques (L2 regularization, dropout) were applied to reduce 
 **### Deployment Strategy and API Usage Guide**
 Deployment Strategy:
 •	Containerized the application using Docker to ensure portability and scalability.
+
 •	Exposed the model as a REST API using FastAPI/Flask.
+
 •	Used a cloud platform (AWS, Azure, or GCP) for deployment, ensuring scalability.
+
 •	Optimized API response time by enabling model caching and efficient inference processing.
+
 API Usage Guide:
 Endpoint: Predict
 •	URL: /predict
