@@ -60,16 +60,25 @@ Deployment Strategy:
 •	Optimized API response time by enabling model caching and efficient inference processing.
 
 API Usage Guide:
+
 Endpoint: Predict
+
 •	URL: /predict
+
 •	Method: POST
+
 •	Request Body: Multipart/form-data with an image file.
+
 Example Request (using cURL):
+
 curl -X POST "http://127.0.0.1:5000/predict" -F "file=@image.jpg"
+
 Example Response:
+
 {
   "predicted_class": "Tumor",
   "confidence_score": 0.92
 }
+
 This API allows users to upload an image, and the model will return the predicted class along with a confidence score.
 
