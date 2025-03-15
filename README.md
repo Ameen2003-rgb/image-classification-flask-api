@@ -82,3 +82,56 @@ Example Response:
 
 This API allows users to upload an image, and the model will return the predicted class along with a confidence score.
 
+
+How to run 
+**How to Run the Dockerized Flask Application**
+
+### **1️⃣ Build the Docker Image**  
+Before running the container, ensure you have built the Docker image.
+Run:
+
+docker build -t flask-app .
+
+### **2️⃣ Run the Container**  
+Start the container using the following command:
+
+docker run -d -p 5000:5000 --name flask-app flask-app
+
+
+### **3️⃣ Check Running Containers**  
+Ensure your container is running:
+
+docker ps
+
+
+### **4️⃣ View Logs (Optional)**  
+Check logs to verify the application is running:
+
+docker logs flask-app
+
+
+### **5️⃣ Access the Application**  
+Open your browser and go to:
+
+http://localhost:5000
+
+
+### **6️⃣ Stopping the Container**  
+If you need to stop the running container:
+
+docker stop flask-app
+
+
+### **7️⃣ Removing the Container**  
+If you need to remove the container before re-running it:
+
+docker rm flask-app
+
+
+### **8️⃣ Restarting the Container**  
+To start the container again without rebuilding:
+
+docker start flask-app
+
+
+
